@@ -48,6 +48,8 @@
 // console.log(a.toString()+b);
 
 
+
+
 // Тема - типы данных и преобразования
 
 //true → 1, false → 0, undefined → NaN, null → 0, “text” → NaN, “” → 0
@@ -61,9 +63,7 @@
 
 
 
-
-
-let value;
+// let value;
 
 // // Number to string
 // value = String(10);
@@ -105,5 +105,65 @@ let value;
 // console.log(typeof value);
 // console.log('23'>'1');
 // console.log( undefined  == false );
+// console.log(value);
 
-console.log(value);
+
+
+
+
+
+
+
+// тема объекты
+
+// const user = {
+//     firstName: 'Denis',
+//     age: 30,
+//     isAdmin: true,
+//     email: 'test@test.com',
+//     'user-address': {
+//       city: 'Kharkiv'
+//     },
+//     skills: ['html', 'css', 'js']
+//   };
+  
+//   let value;
+// //   let prop = 'skills';
+  
+// //   value = user.firstName;
+// //   value = user['isAdmin'];
+// //   value = user['user-address'];
+// //   value = user['user-address'].city;
+// //   value = user['user-address']['city'];
+// //   value = user[prop][0];
+  
+// //   user.firstName = 'Den';
+  
+// //   value = user.firstName;
+  
+//   user.info = 'Some info';
+  
+//   value = user.info;
+  
+//   user['user-address'].city = 'Kiev';
+//   user['user-address'].country = 'Ukraine';
+  
+//   console.log(user.plan);
+//   user.plan = {};
+//   user.plan.basic = 'basic';
+  
+//   console.log(value);
+//   console.log(user);
+  
+
+// Задачки
+
+// //1. Создать объект с полем product, равным ‘iphone’
+// const my_obj = {product: 'iphone'}
+// let price, currency
+// // Добавить в объект поле price, равное 1000 и поле currency, равное ‘dollar’
+// [my_obj.price, my_obj.currency] = [1000, 'dollar', 'tripple']
+// console.log(my_obj);
+// //Добавить поле details, которое будет содержать объект с полями model и color
+// my_obj.details = {model: 'some', color: 'red'}
+// console.log(my_obj);
