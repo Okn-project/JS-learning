@@ -93,16 +93,33 @@
 // console.log(reverse_string("w34324"));
 
 // Создать функцию, которая в качестве аргумента принимает строку из букв и возвращает строку, где каждый символ разделен пробелом и заменен на юникод-значение символа:
-function get_unicode(some_string = "") {
-  if (some_string) {
-    some_string = (some_string += "").split("");
-    return some_string
-      .map((letter) => letter.charCodeAt(), some_string)
-      .join(" ");
-  }
-  return console.log("no string");
-}
+// function get_unicode(some_string = "") {
+//   if (some_string) {
+//     some_string = (some_string += "").split("");
+//     return some_string
+//       .map((letter) => letter.charCodeAt(), some_string)
+//       .join(" ");
+//   }
+//   return console.log("no string");
+// }
+// console.log(get_unicode("asdsadsad"));
 
-console.log(get_unicode("asdsadsad"));
+// Создать функцию угадай число. Она принимает число от 1-10 (обязательно проверить что число не больше 10 и не меньше 0).
+// Генерирует рандомное число от 1-10 и сравнивает с заданным числом если они совпали то возвращает
+// “Вы выиграли” если нет то “Вы не угадали ваше число 8 а выпало число 5”. Числа в строке указаны как пример вы подставляете реальные числа.
 
-// Создать функцию угадай число. Она принимает число от 1-10 (обязательно проверить что число не больше 10 и не меньше 0). Генерирует рандомное число от 1-10 и сравнивает с заданным числом если они совпали то возвращает “Вы выиграли” если нет то “Вы не угадали ваше число 8 а выпало число 5”. Числа в строке указаны как пример вы подставляете реальные числа.
+// function guess_number(number) {
+//   if (isNaN(+number) || 0 > number || number > 10) {
+//     return console.log("not a number");
+//   } else if (typeof number === "boolean" || number === null) {
+//     return console.log("not a number");
+//   }
+//   let message;
+//   let win_number = Math.round(Math.random() * 10);
+//   win_number == number
+//     ? (message = "Вы выиграли")
+//     : (message = `Вы не угадали ваше число ${number} а выпало число ${win_number}`);
+//   console.log();
+//   return message;
+// }
+// console.log(guess_number(5));
