@@ -88,3 +88,4 @@
 //   return element > 5;
 // }
 // console.log(my_every([12, 14, 29, 22, 26], handler));
+console.log(navigator);
